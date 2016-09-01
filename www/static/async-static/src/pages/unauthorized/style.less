@@ -1,0 +1,55 @@
+@import "../../common/less/global.less";
+@import "../../common/less/mixins.less";
+
+.bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background: url("http://cdn1.showjoy.com/images/e5/e5db6b4cdfd14ea2a75a6d1186aae0fc.jpg") center 0;
+  background-size: 100% auto;
+
+  .shadow{
+    position: fixed;
+    top: 0;
+    left: 0 ;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: #000000;
+    opacity: 0.4;
+  }
+
+  .main-text{
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    margin-left: -190px;
+    width: 380px;
+    height: auto;
+    padding: 15px 0;
+    z-index: 1000;
+    text-align: center;
+    color: #ffffff;
+    font: bold 55px/55px 'Helvetica';
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    user-select: none;
+    cursor: pointer;
+
+    .sub-text{
+      margin-top: 15px;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      font: lighter 18px/25px 'Arial';
+    }
+
+    &:hover{
+      color: #0c526e;
+      background: #FFFFFF;
+    }
+  }
+}

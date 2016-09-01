@@ -1,0 +1,77 @@
+.prompt-info{
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .background-shadow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    opacity: 0.3;
+    background-color: #000000;
+  }
+
+  .info-block{
+    display: table;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 230px;
+    margin-top: -260px/2;
+    margin-left: -450px/2;
+    z-index: 9999;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+
+    .prompt-head{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 95%;
+      height: 40px;
+      margin-left: -213px;
+      padding: 0 10px;
+      border-bottom: 1px solid #DDDDDD;
+      text-align: left;
+      font: bold 20px/40px 'Arial';
+    }
+
+    .close-btn{
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 19px;
+      cursor: pointer;
+      color: #DDDDDD;
+
+      &:hover{
+        color: #000000;
+      }
+    }
+
+    .info-text{
+      display: table-cell;
+      vertical-align: middle;
+      width: 100%;
+      padding: 0 20px;
+      word-break: break-all;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
+      font-size: 17px;
+    }
+
+    .confirm{
+      position: absolute;
+      bottom: 25px;
+      left: 50%;
+      margin-left: -54px/2;
+    }
+  }
+}

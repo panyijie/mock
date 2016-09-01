@@ -1,0 +1,32 @@
+@import "../../common/less/mixins.less";
+
+.mock-random-list-input {
+  width: 100%;
+  height: auto;
+  padding: 0 40px;
+  .mock-random-list-title {
+    position: relative;
+    height: 30px;
+    margin: 0 auto 10px;
+    padding: 0 15px;
+    border-bottom: 1px solid #CCC;
+    font: bold 14px/30px 'Arial';
+    .add-btn {
+      position: absolute;
+      top: 0;
+      right: 15px;
+    }
+  }
+  .mock-random-list {
+    position: relative;
+    height: auto;
+    margin-bottom: 10px;
+    .clearfix();
+    .delete-btn{
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -11px;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@import "../../common/less/mixins.less";
+
+.mock-random-text-list {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  .clearfix();
+  .mock-random-list {
+    float: left;
+    position: relative;
+    width: 49.5%;
+    height: 83px;
+    margin-left: 0.5%;
+    margin-bottom: 15px;
+    padding: 15px 15px;
+    background-color: #fff;
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    &:nth-child(2n+1){
+      margin-left: 0;
+      margin-right: 0.5%;
+    }
+    .mock-random-title {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      font: bolder 18px/25px 'Arial';
+      .label {
+        margin-left: 10px;
+      }
+    }
+    .mock-random-des {
+      width: 100%;
+      height: 18px;
+      font: normal 14px/18px 'Arial';
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .detail-btn{
+      display: none;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font: normal 13px/13px 'Arial';
+      color: #999;
+      &:hover{
+        color: #333;
+      }
+    }
+    &:hover{
+      .detail-btn{
+        display: block;
+      }
+    }
+    &.add-mock-random-btn{
+      background-color: #f3f3f3;
+      font: bolder 20px/50px 'Arial';
+      text-align: center;
+      color: #AAAAAA;
+      cursor: pointer;
+      .glyphicon{
+        margin-right: 10px;
+      }
+      transition: color 0.3s;
+      &:hover{
+        color: #666;
+      }
+    }
+  }
+}

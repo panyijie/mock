@@ -1,0 +1,40 @@
+.page-init{
+  position: relative;
+
+  .background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    opacity: 0.3;
+    background-color: #000000;
+  }
+
+  .tips{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -45px 0 0 -800px/2;
+    width: 800px;
+    height: 50px;
+    z-index: 9999;
+    text-align: center;
+    font: normal 20px/20px 'Arial';
+    color: #FFFFFF;
+  }
+
+  .progress{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -10px 0 0 -800px/2;
+    width: 800px;
+    z-index: 9999;
+  }
+
+  &.hide{
+    display: none;
+  }
+}

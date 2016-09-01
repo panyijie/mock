@@ -1,0 +1,198 @@
+@import '../../common/less/mixins';
+.interface-global-header {
+  width: 100%;
+  height: 45px;
+  background-color: #232323;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  .middle-content {
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+    .clearfix();
+    .logo {
+      float: left;
+      width: 160px;
+      height: 100%;
+      background: url("http://cdn1.showjoy.com/images/b2/b2b8655fcd39442ab4371e458302115d.png") no-repeat center;
+      background-size: 160px 45px;
+      cursor: pointer;
+    }
+    .add-btn {
+      position: relative;
+      float: right;
+      width: 120px;
+      height: 100%;
+      font: bold 14px/45px 'Arial';
+      color: #FFFFFF;
+      text-align: center;
+      cursor: pointer;
+      .glyphicon {
+        margin-right: 5px;
+      }
+      &:hover {
+        .glyphicon {
+          color: #4c8bd6;
+        }
+      }
+      .add-list {
+        position: absolute;
+        top: 45px;
+        left: 50%;
+        margin-left: -9999px/2;
+        width: 9999px;
+        height: auto;
+        background-color: #333;
+        ul {
+          width: 980px;
+          height: 100%;
+          margin: 0 auto;
+          text-align: center;
+          color: #ccc;
+          li{
+            display: inline-block;
+            padding: 0 15px;
+            font: normal 14px/45px 'Arial';
+            cursor: pointer;
+            transition: all 0.3s;
+            .glyphicon {
+              transition: color 0.3s;
+              margin-right: 3px;
+              color: #ccc;
+            }
+            &:hover{
+              background-color: #f6ca5c;
+              color: #000;
+              .glyphicon {
+                color: #000;
+              }
+            }
+          }
+        }
+        &.hide{
+          display: none;
+        }
+      }
+    }
+    .operate-btn {
+      float: right;
+      width: 120px;
+      height: 100%;
+      font: bold 14px/45px 'Arial';
+      color: #FFFFFF;
+      text-align: center;
+      cursor: pointer;
+      .glyphicon {
+        margin-right: 5px;
+      }
+      &:hover {
+        .glyphicon {
+          color: #4c8bd6;
+        }
+      }
+      .operate-list {
+        position: absolute;
+        top: 45px;
+        left: 50%;
+        margin-left: -9999px/2;
+        width: 9999px;
+        height: auto;
+        background-color: #333;
+        ul {
+          width: 980px;
+          height: 100%;
+          margin: 0 auto;
+          text-align: center;
+          color: #ccc;
+          li{
+            display: inline-block;
+            padding: 0 15px;
+            font: normal 14px/45px 'Arial';
+            cursor: pointer;
+            transition: all 0.3s;
+            .glyphicon {
+              transition: color 0.3s;
+              margin-right: 3px;
+              color: #ccc;
+            }
+            &:hover{
+              background-color: #f6ca5c;
+              color: #000;
+              .glyphicon {
+                color: #000;
+              }
+            }
+          }
+        }
+        &.hide{
+          display: none;
+        }
+      }
+    }
+    .logout {
+      position: relative;
+      float: right;
+      padding: 0 15px;
+      height: 100%;
+      font: normal 14px/45px 'Arial';
+      color: #AAAAAA;
+      background: #705108;
+      user-select: none;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        background: #d0970f;
+        color: #FFFFFF;
+      }
+    }
+    .search {
+      position: relative;
+      float: right;
+      width: 270px;
+      height: 100%;
+      .search-input {
+        position: absolute;
+        top: 0;
+        left: 20px;
+        width: 195px;
+        height: 45px;
+        padding: 0 30px 0 8px;
+        border: none;
+        outline: none;
+        font: normal 13px/45px 'Arial';
+        background-color: #444444;
+        color: #AAAAAA;
+        transition: all 0.3s;
+        &:focus {
+          background-color: #f4f4f4;
+          color: #000000;
+        }
+      }
+      .glyphicon-search {
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        margin-top: -16px/2;
+        font-size: 14px;
+        color: #AAAAAA;
+      }
+      .search-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 45px;
+        padding: 0 15px;
+        background-color: #284970;
+        color: #AAAAAA;
+        text-align: center;
+        font: 14px/45px 'Arial';
+        cursor: pointer;
+        user-select: none;
+        transition: all 0.3s;
+        &:hover {
+          background-color: #3e64a1;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
